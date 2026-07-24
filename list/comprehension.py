@@ -6,7 +6,6 @@ for x in fruits:
 # only "a" letter word will be added in new list 
   if "a" in x:
     newlist.append(x)
-
 print(newlist)
 
 #with the single line syntax
