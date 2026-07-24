@@ -15,3 +15,8 @@ def myfunc(n):
 thislist = [100, 50, 65, 82, 23]
 thislist.sort(key = myfunc)
 print(thislist)
+
+#sorting by the lower case
+friends = ["shubham","Rohit","Parth"]
+friends.sort(key =str.lower)
+print(friends)
