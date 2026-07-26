@@ -13,6 +13,8 @@ for x in list4:
     list3.append(x)
 print(list3)
 
+
+#join the list by using extend() function
 list5 = [2,4,5,6]
 list6 = [4,35,6,36,46]
 list5.extend(list6)
