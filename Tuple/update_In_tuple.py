@@ -25,9 +25,8 @@ print(num)
 
 z = list(num)
 z.remove(3)
+
+# 1 including and 3 where to stop
 z[1:3]=["ninja","Jack"]
 num= tuple(z)
-print(num)
-
-del num 
 print(num)
