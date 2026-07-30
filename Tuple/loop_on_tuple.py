@@ -14,4 +14,3 @@ i=0
 while i < len(Material):
   print(Material[i])
   i = i+1
-  i=+1
