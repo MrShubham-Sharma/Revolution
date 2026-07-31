@@ -15,3 +15,12 @@ print(Set1)
 
 # for find the type of set 
 print(type(Set1))
+
+# acsess by loop
+for x in Friends:
+    print(x)
+
+# check if item in set
+print("Shubh"in Friends)
+
+print("Parth"not in Friends)
