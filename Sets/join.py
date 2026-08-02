@@ -68,7 +68,19 @@ print(set15)
 
 # The difference_update() method will keep the items from the first set that are not in the other set,
 #  but it will change the original set instead of returning a new set.
-data ={2,2,4,25,53,5,3,5}
+data ={2,2,4,2,53,5,3,5}
 data2 ={2,44,4,52,5,2,246,5}
 data.difference_update(data2)
+print(data)
+
+# The symmetric_difference() method will keep only the elements that are NOT present in both sets.
+data.symmetric_difference(data2)
+print(data2)
+
+data3 = data^data2
+print(data3)
+
+# The symmetric_difference_update() method will also keep all but the duplicates, 
+# but it will change the original set instead of returning a new set.
+data.symmetric_difference_update(data3)
 print(data)
