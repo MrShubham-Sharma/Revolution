@@ -1,0 +1,47 @@
+# .union() commbines the two item sets
+set1 ={1,3,5,6,7,8}
+set2 ={"a","b","c","d","e","f"}
+set3 =set1.union(set2)
+print(set3)
+
+# | gives the same output as union but only works set to set
+set1 = set3 | set2 
+print(set1)
+
+set4 = {"a", "b", "c"}
+set5 = {1, 2, 3}
+set6 = {"John", "Elena"}
+set7 = {"apple", "bananas", "cherry"}
+
+set8= set4|set5|set6|set7
+print(set8)
+
+# Note: The  | operator only allows you to join sets with sets, 
+# and not with other data types like you can with the  union() method.
+
+x = {"a", "b", "c"}
+y = (1, 2, 3)
+
+z = x.union(y)
+print(z)
+
+# Note: Both union() and update() will exclude any duplicate items.
+set7.update(set6)
+print(set7)
+
+# Intersection
+# Keep ONLY the duplicates
+
+# The intersection() method will return a new set, that only contains the items that are present in both sets.
+
+set9={2,4,5,6,4,3,4,3,4,5}
+set10={2,4,5,6,5,4,6,4,7}
+set11=set9.intersection(set10)
+print(set9)
+
+# You can use the & operator instead of the intersection() method, and you will get the same result.
+set11=set9 &set10
+print(set11)
+
+# Note: The & operator only allows you to join sets with sets, 
+# and not with other data types like you can with the intersection() method.
