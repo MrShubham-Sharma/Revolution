@@ -45,3 +45,30 @@ print(set11)
 
 # Note: The & operator only allows you to join sets with sets, 
 # and not with other data types like you can with the intersection() method.
+
+# The intersection_update() method will also keep ONLY the duplicates, 
+# but it will change the original set instead of returning a new set.
+set9.intersection_update(set10)
+print(set9)
+
+# The difference() method will return a new set that will contain only the items 
+# from the first set that are not present in the other set.
+
+set13={"apple", "banana", "cherry"}
+set12 = {"google", "microsoft", "apple"}
+set14 = set13.difference(set12)
+
+print(set14)
+
+# Note: The - operator only allows you to join sets with sets,
+# and not with other data types like you can with the difference() method.
+
+set15=set12-set11
+print(set15)
+
+# The difference_update() method will keep the items from the first set that are not in the other set,
+#  but it will change the original set instead of returning a new set.
+data ={2,2,4,25,53,5,3,5}
+data2 ={2,44,4,52,5,2,246,5}
+data.difference_update(data2)
+print(data)
