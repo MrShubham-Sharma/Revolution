@@ -14,3 +14,7 @@ print(nigga)
 # The popitem() method removes the last inserted item (in versions before 3.7, a random item is removed instead):
 nigga.popitem()
 print(nigga)
+
+# The clear() method empties the dictionary:
+nigga.clear()
+print(nigga)
