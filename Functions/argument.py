@@ -36,3 +36,10 @@ def friends(person):
     print("Age:",person["age"])
 my_person ={"name":"Shubh","age":21}
 friends(my_person)
+
+def function():
+    return (20,54) 
+x,y = function()
+print(f"x is {x}")
+print(f"Y is {y}")
+
