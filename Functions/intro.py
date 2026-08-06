@@ -22,3 +22,12 @@ def Greeting():
    return "Hello Master"
 To_Master = Greeting()
 print(To_Master)
+
+# If a function doesn't have a return statement, it returns None by default
+
+print(Greeting())
+
+def Hello():
+   pass
+# pass act as the placeholder it allowing you to define the structure first and implement details later.
+
