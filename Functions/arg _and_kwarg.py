@@ -45,6 +45,8 @@ def my_function(*numbers):
 print(my_function(5, 3, 6, 7, 8, 3))
 
 # Arbitrary Keyword Arguments - **kwargs
+# The double star ** tells Python: "Take all labeled key-value pairs passed here and pack them into a dictionary called kwargs."
+#  Use this when your inputs have names (like profile details or settings).
 
 def my_function(**kid):
   print("His last name is " + kid["lname"])
@@ -54,3 +56,17 @@ my_function(fname = "Tobias", lname = "Refsnes")
 def my_function(**name):
    print(f"He Is my Friend is {name["sname"]}")
 my_function(sname="Shubh",yname="parth")
+
+def my_function(**myvar):
+   print("type is ", type(myvar))
+   print("Name" ,myvar["name"])
+   print("Age" ,myvar["age"] )
+   print("all Data ",myvar)
+my_function(name= "Shubh" ,age=21)
+
+def my_function(Collage_Name,*Fees,**Student):
+   print(f"Welcome TO The {Collage_Name}")
+   total_fees =sum(Fees)
+   print(f"total fess is {total_fees}")
+   print(f"Student Data :{Student}")
+my_function("Slrtce",12000,4000,43000,name="Shubham",age=21) 
