@@ -43,3 +43,14 @@ def my_function(*numbers):
     return min_num 
 
 print(my_function(5, 3, 6, 7, 8, 3))
+
+# Arbitrary Keyword Arguments - **kwargs
+
+def my_function(**kid):
+  print("His last name is " + kid["lname"])
+
+my_function(fname = "Tobias", lname = "Refsnes")
+
+def my_function(**name):
+   print(f"He Is my Friend is {name["sname"]}")
+my_function(sname="Shubh",yname="parth")
