@@ -40,3 +40,17 @@ def hi():
     print(x)
 hi()
 print(x)
+
+# Global Keyword
+
+# If you need to create a global variable, but are stuck in the local scope, you can use the global keyword.
+# The global keyword makes the variable global.
+
+x=200
+# we can use the global keyword for change global variable in the function.
+def yo():
+    global x
+    x=3000
+    print(x)
+yo()
+print(x)
