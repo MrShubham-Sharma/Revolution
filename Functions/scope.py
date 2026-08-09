@@ -54,3 +54,18 @@ def yo():
     print(x)
 yo()
 print(x)
+
+# Nonlocal Keyword
+
+# The nonlocal keyword is used to work with variables inside nested functions.
+# The nonlocal keyword makes the variable belong to the outer function.
+
+def fun1():
+    x="Shubh"
+    print(x)
+    def fun2():
+        nonlocal x 
+        x="Rohit"
+        print(x)
+    fun2()
+fun1()
