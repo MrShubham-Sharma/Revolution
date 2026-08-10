@@ -32,5 +32,19 @@ def changecase(fun):
 
 @changecase
 def my_function(Name):
-    return "Hellow " + Name
-print(my_function("Parth"))
+    return "Hellow !" + Name
+print(my_function("Parth")) 
+
+# Sometimes the decorator function has no control over the arguments passed from decorated function,
+#  to solve this problem, add (*args, **kwargs) to the wrapper function, this way the wrapper function can accept any number, 
+# and any type of arguments, and pass them to the decorated function.
+
+def change(fun):
+    def my_function(*args,**kwargs):
+        return fun(*args,**kwargs).upper()
+    return my_function
+
+@change
+def fun(nam):
+    return "HELLOW Mr." +nam
+print(fun("Shubham"))
