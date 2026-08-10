@@ -21,3 +21,16 @@ print(Function2())
 def func2():
     return "yooo Buddy!"
 print(func2())
+
+
+# passing argument 
+
+def changecase(fun):
+    def inner(x):
+        return fun(x).upper()
+    return inner
+
+@changecase
+def my_function(Name):
+    return "Hellow " + Name
+print(my_function("Parth"))
