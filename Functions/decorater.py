@@ -48,3 +48,22 @@ def change(fun):
 def fun(nam):
     return "HELLOW Mr." +nam
 print(fun("Shubham"))
+
+# Decorator With Arguments
+# Decorators can accept their own arguments by adding another wrapper level.
+
+def changecase(n):
+    def changecase(fun):
+        def inner():
+            if n==1:
+                a = fun().upper()
+            else:
+                a = fun().lower()
+            return a
+        return inner
+    return changecase
+
+@changecase(1)
+def my_function():
+    return "Hello Brother "
+print(my_function())
