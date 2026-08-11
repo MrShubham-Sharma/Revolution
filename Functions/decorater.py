@@ -67,3 +67,25 @@ def changecase(n):
 def my_function():
     return "Hello Brother "
 print(my_function())
+
+# Multiple Decorators
+
+# You can use multiple decorators on one function.
+# This is done by placing the decorator calls on top of each other.
+# Decorators are called in the reverse order, starting with the one closest to the function.
+
+def changecase(func):
+    def inner():
+        return func().upper()
+    return inner
+
+def greeting_func(func):
+    def inner():
+        return f"hello {func()} Have an good day !"
+    return inner
+
+@changecase
+@greeting_func
+def my_function():
+    return "Shubh"
+print(my_function())
