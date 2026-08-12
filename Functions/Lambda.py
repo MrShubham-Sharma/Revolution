@@ -48,3 +48,14 @@ print(odd_num)
 # expression for the even numbers 
 even_num = list(filter(lambda a: a % 2 == 0 ,list1))
 print(even_num)
+
+# Using Lambda with sorted()
+
+# The sorted() function can use a lambda as a key for custom sorting:
+
+list3  =[("Shubham", 21),("Parth",20),("Rohit",22)]
+sorting = sorted(list3,key=lambda x :x[1])
+print(sorting)
+
+sorting_len = sorted(list3,key=lambda x :len(x))
+print(sorting_len)
