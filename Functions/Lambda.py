@@ -37,3 +37,14 @@ print(triple)
 list2 =[1,4,56,6,3,5]
 double= list(map(lambda a,b :a*b , list1 ,list2))
 print(double)
+
+# Using Lambda with filter()
+
+# The filter() function creates a list of items for which a function returns True:
+#  expression for the odd numbers
+odd_num = list(filter(lambda a : a%2 !=0,list1))
+print(odd_num)
+
+# expression for the even numbers 
+even_num = list(filter(lambda a: a % 2 == 0 ,list1))
+print(even_num)
